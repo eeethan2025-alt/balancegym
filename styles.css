@@ -1,0 +1,127 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #000; /* Negro base */
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  border-bottom: 3px solid #e50914; /* Rojo intenso */
+}
+
+header .logo img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+header .nombre {
+  font-size: 2.5rem;
+  color: #e50914;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Sección principal */
+main {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.presentacion h2 {
+  font-size: 2rem;
+  color: #e50914;
+  margin-bottom: 10px;
+}
+
+.presentacion p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+}
+
+/* Galería */
+.galeria h2 {
+  font-size: 2rem;
+  color: #e50914;
+  margin-bottom: 20px;
+}
+
+.imagenes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.imagenes img {
+  width: 300px;
+  border-radius: 8px;
+  border: 2px solid #e50914;
+  transition: transform 0.3s ease;
+}
+
+.imagenes img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 20px;
+  border-top: 3px solid #e50914;
+}
+
+footer h3 {
+  color: #e50914;
+  margin-bottom: 15px;
+}
+
+.redes a {
+  color: #fff;
+  font-size: 1.8rem;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.redes a:hover {
+  color: #e50914;
+}
+
+footer p {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Animación de aparición */
+section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animación de íconos */
+.redes i {
+  transition: transform 0.3s ease;
+}
+
+.redes i.pop {
+  transform: scale(1.3);
+}
